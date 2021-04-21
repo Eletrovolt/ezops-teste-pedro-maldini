@@ -41,13 +41,13 @@
     }
 
     function getMessages(){
-      $.get('http://54.92.226.126:3001/messages', (data) => {
+      $.get('http://100.27.21.218:3001/messages', (data) => {
         data.forEach(addMessages);
       })
     }
 
     function sendMessage(message){
-      $.post('http://54.92.226.126:3001/messages', message)
+      $.post('http://100.27.21.218:3001/messages', message)
     }
 </script>
 </body>
