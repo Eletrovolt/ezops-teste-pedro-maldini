@@ -14,7 +14,7 @@
     "http": "0.0.1-security",
     "https": "^1.0.0",
     "module_name": "^1.0.0",
-    "mongoose": "^5.12.4",
+    "mongoose": "^5.12.5",
     "socket.io": "^2.4.1"
   },
   "devDependencies": {
