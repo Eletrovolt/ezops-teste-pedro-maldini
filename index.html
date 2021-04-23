@@ -47,18 +47,18 @@
     }
 
     function getMessages(){
-      $.get('http://localhost:3001/messages', (data) => {
+      $.get('http://34.229.203.255:3001/messages', (data) => {
         data.forEach(addMessages);
       })
     }
 
     function sendMessage(message){
-      $.post('http://localhost:3001/messages', message)
+      $.post('http://34.229.203.255:3001/messages', message)
     }
 
 
 //    function questionList(message){
-//      $.post('http://localhost:3001/messages', message)
+//      $.post('http://34.229.203.255:3001/messages', message)
 //    }
 
 
