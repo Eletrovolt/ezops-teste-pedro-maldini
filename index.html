@@ -34,6 +34,12 @@
         getMessages()
     })
 
+   $(document).ready(function() {
+       $.get('http://34.229.203.255:3001/welcome', (data)  => {
+           data.forEach(addMessages);
+       })
+   });
+
     socket.on('message', addMessages)
 
     function addMessages(message){
@@ -41,14 +47,22 @@
     }
 
     function getMessages(){
-      $.get('http://100.27.21.218:3001/messages', (data) => {
+      $.get('http://localhost:3001/messages', (data) => {
         data.forEach(addMessages);
       })
     }
 
     function sendMessage(message){
-      $.post('http://100.27.21.218:3001/messages', message)
+      $.post('http://localhost:3001/messages', message)
     }
+
+
+//    function questionList(message){
+//      $.post('http://localhost:3001/messages', message)
+//    }
+
+
 </script>
 </body>
 </html>
+
